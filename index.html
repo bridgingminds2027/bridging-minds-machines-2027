@@ -1056,51 +1056,86 @@ p.lead,
   </div>
 </section>
 
+
 <!-- ===== VENUE ===== -->
 <section class="section venue" id="venue">
   <div class="wrap">
+
     <p class="eyebrow reveal">§ 08 — Venue &amp; location</p>
-    
+
     <div class="venue-top">
-      
+
       <!-- Columna Izquierda: Texto de la Sede -->
       <div class="reveal">
         <h2 class="head">Universidad Miguel Hernández, Elche.</h2>
-        <p class="lead">Hosted by a DONUT beneficiary institution in the city of palm groves on Spain's Costa Blanca. Late June in Alicante brings long, warm evenings and direct connections from across Europe through Alicante–Elche airport.</p>
+
+        <p class="lead">
+          Hosted by a DONUT beneficiary institution in the city of palm groves
+          on Spain's Costa Blanca. Late June in Alicante brings long, warm
+          evenings and direct connections from across Europe through
+          Alicante–Elche airport.
+        </p>
+
         <div class="addr">
           <p class="k">Venue</p>
-          <p><strong>Cinemateca — Edificio Valona</strong><br>Avda. de la Universidad s/n, 03202 Elche (Alicante), Spain<br>
-          <a href="https://maps.google.com/?q=Universidad+Miguel+Hernández+de+Elche+Edificio+Valona" target="_blank" rel="noopener">Open in maps →</a></p>
+          <p>
+            <strong>Cinemateca — Edificio Valona</strong><br>
+            Avda. de la Universidad s/n, 03202 Elche (Alicante), Spain<br>
+            <a href="https://maps.google.com/?q=Universidad+Miguel+Hernández+de+Elche+Edificio+Valona"
+               target="_blank"
+               rel="noopener">
+              Open in maps →
+            </a>
+          </p>
         </div>
       </div>
 
-      <!-- Columna Derecha: Foto de la Sede -->
-      <div class="photo reveal">
+      <!-- Columna Derecha: Foto principal -->
+      <div class="photo reveal venue-main-photo">
         <img src="umhc.png" alt="UMH Campus" class="ph-img">
       </div>
 
-    </div> <!-- Cierre correcto de venue-top -->
     </div>
 
-    <!-- Galería de fotos inferiores -->
-    <div class="venue-gallery">
+    <!-- Galería / Slider -->
+    <div class="venue-slider">
 
-      <div class="photo">
-        <img src="umh5.jpg" alt="UMH Campus" class="ph-img">
+      <button class="venue-arrow venue-prev" aria-label="Previous photo">
+        ←
+      </button>
+
+      <div class="venue-slides">
+
+        <div class="venue-slide active">
+          <img src="umh5.jpg" alt="UMH Campus">
+        </div>
+
+        <div class="venue-slide">
+          <img src="umh6.jpg" alt="UMH Campus">
+        </div>
+
+        <div class="venue-slide">
+          <img src="campusexterior.jpg" alt="UMH Campus">
+        </div>
+
       </div>
 
-      <div class="photo">
-        <img src="umh6.jpg" alt="UMH Campus" class="ph-img">
-      </div>
+      <button class="venue-arrow venue-next" aria-label="Next photo">
+        →
+      </button>
 
-      <div class="photo">
-        <img src="campusexterior.jpg" alt="UMH Campus" class="ph-img">
-      </div>
+    </div>
 
+    <!-- Indicadores -->
+    <div class="venue-dots">
+      <button class="venue-dot active" aria-label="Photo 1"></button>
+      <button class="venue-dot" aria-label="Photo 2"></button>
+      <button class="venue-dot" aria-label="Photo 3"></button>
     </div>
 
   </div>
 </section>
+
 
 <!-- ===== WHY ATTEND ===== -->
 <section class="section gain">
