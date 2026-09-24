@@ -1065,7 +1065,7 @@ p.lead,
 
     <div class="venue-top">
 
-      <!-- Columna Izquierda: Texto de la Sede -->
+      <!-- Texto -->
       <div class="reveal">
         <h2 class="head">Universidad Miguel Hernández, Elche.</h2>
 
@@ -1090,51 +1090,77 @@ p.lead,
         </div>
       </div>
 
-      <!-- Columna Derecha: Foto principal -->
-      <div class="photo reveal venue-main-photo">
+      <!-- Foto principal -->
+      <div class="photo reveal">
         <img src="umhc.png" alt="UMH Campus" class="ph-img">
       </div>
 
     </div>
 
-    <!-- Galería / Slider -->
-    <div class="venue-slider">
+    <!-- ===== 3 FOTOS CENTRADAS ===== -->
+    <div class="venue-gallery">
 
-      <button class="venue-arrow venue-prev" aria-label="Previous photo">
-        ←
-      </button>
-
-      <div class="venue-slides">
-
-        <div class="venue-slide active">
-          <img src="umh5.jpg" alt="UMH Campus">
-        </div>
-
-        <div class="venue-slide">
-          <img src="umh6.jpg" alt="UMH Campus">
-        </div>
-
-        <div class="venue-slide">
-          <img src="campusexterior.jpg" alt="UMH Campus">
-        </div>
-
+      <div class="photo">
+        <img src="umh5.jpg" alt="UMH Campus" class="ph-img">
       </div>
 
-      <button class="venue-arrow venue-next" aria-label="Next photo">
-        →
-      </button>
+      <div class="photo">
+        <img src="umh6.jpg" alt="UMH Campus" class="ph-img">
+      </div>
 
-    </div>
+      <div class="photo">
+        <img src="campusexterior.jpg" alt="UMH Campus" class="ph-img">
+      </div>
 
-    <!-- Indicadores -->
-    <div class="venue-dots">
-      <button class="venue-dot active" aria-label="Photo 1"></button>
-      <button class="venue-dot" aria-label="Photo 2"></button>
-      <button class="venue-dot" aria-label="Photo 3"></button>
     </div>
 
   </div>
 </section>
+
+
+<!-- ===== CSS DE LAS 3 FOTOS ===== -->
+<style>
+
+.venue-gallery {
+  width: 100%;
+  max-width: 1050px;
+  margin: 60px auto 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.venue-gallery .photo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.venue-gallery .ph-img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+}
+
+
+/* Móvil */
+@media (max-width: 768px) {
+
+  .venue-gallery {
+    flex-direction: column;
+  }
+
+  .venue-gallery .ph-img {
+    max-width: 450px;
+  }
+
+}
+
+</style>
 
 
 <!-- ===== WHY ATTEND ===== -->
