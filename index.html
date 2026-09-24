@@ -218,7 +218,19 @@
   .theme h3{font-family:var(--display);font-weight:600;font-size:20px;margin:0 0 10px;color:var(--navy);letter-spacing:-.01em}
   .theme p{margin:0 0 14px;color:var(--slate);font-size:14.5px}
   .theme .q{font-size:13px;color:#3a4763;border-top:1px solid var(--line-soft);padding-top:13px;font-style:italic;font-family:var(--display)}
-
+  
+/* ---------- CONSORCIO / COMITÉ CIENTÍFICO ---------- */
+  .consorcium{background:var(--paper)}
+  .cons-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:54px}
+  @media(max-width:860px){.cons-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:540px){.cons-grid{grid-template-columns:1fr}}
+  .cons-card{background:var(--paper);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+  .cons-card .photo{border:0;border-radius:0;aspect-ratio:1/1}
+  .cons-card .body{padding:22px 24px 24px}
+  .cons-card h3{font-family:var(--display);font-weight:600;font-size:20px;margin:0;color:var(--navy);letter-spacing:-.01em}
+  .cons-card .role{font-size:14px;color:var(--teal-deep);margin:3px 0 0;font-weight:500}
+  .cons-card .bio{font-size:14px;color:#3a4763;margin:12px 0 0}
+  
   /* ---------- FACULTY ---------- */
   .faculty{background:var(--mist)}
   .fac-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:54px}
